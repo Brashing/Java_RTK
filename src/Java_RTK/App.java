@@ -1,6 +1,5 @@
 package Java_RTK;
 
-import java.io.PrintStream;
 import java.util.Scanner;
 import java.util.Random;
 
