@@ -136,7 +136,7 @@ public class App {
                         }
                     }
                 }
-//                System.out.println(sb.toString());
+                System.out.println(sb);
             }
             scanner.close();
         }
