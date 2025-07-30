@@ -23,12 +23,8 @@ public class Person {
         this.namePerson = namePerson;
         this.cash = cash;
 
-        // Проверка массивa продуктов, чтобы он не был пустым
-        if (productPackage == null) {
-            this.productPackage = new Product[0];
-        } else {
-            this.productPackage = productPackage;
-        }
+        // Проверка массива продуктов, чтобы он не был пустым
+        this.productPackage = Objects.requireNonNullElseGet(productPackage, () -> new Product[0]);
     }
 
     // Геттеры и сеттеры
@@ -59,11 +55,8 @@ public class Person {
     }
 
     public void setProductPackage(Product[] productPackage) {
-        if (productPackage == null) {
-            this.productPackage = new Product[0]; // или можно оставить null
-        } else {
-            this.productPackage = productPackage;
-        }
+        // или можно оставить null
+        this.productPackage = Objects.requireNonNullElseGet(productPackage, () -> new Product[0]);
     }
 
     // Метод покупки продукта
@@ -72,7 +65,7 @@ public class Person {
             return false;
         }
         if (this.cash >= product.getValue()) {
-            this.cash -= product.getValue(); // списываем деньги
+            this.cash -= (int) product.getValue(); // списываем деньги
             this.productPackage = addProductToPackage(product);
             return true; // успешно куплено
         } else {
