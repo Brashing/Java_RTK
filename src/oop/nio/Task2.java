@@ -1,10 +1,9 @@
-package nio;
+package oop.nio;
 
 /*
 Создать папку и подпапку в src
  */
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;

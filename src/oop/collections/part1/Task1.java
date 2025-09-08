@@ -1,6 +1,5 @@
-package oop.part1;
+package oop.collections.part1;
 
-import java.nio.channels.FileChannel;
 import java.util.*;
 
 public class Task1 {

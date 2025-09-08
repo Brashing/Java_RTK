@@ -1,4 +1,4 @@
-package nio;
+package oop.nio;
 
 /*
 Прочитать и вывести содержимое файлов

@@ -1,9 +1,8 @@
-package oop.part1;
+package oop.collections.part1;
 
 // удалить элемент из списка, если он нечетный
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class Task2 {

@@ -1,4 +1,4 @@
-package nio;
+package oop.nio;
 
 /*
 Создать файл в /src с названием test/txt

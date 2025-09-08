@@ -1,4 +1,4 @@
-package nio;
+package oop.nio;
 
 /*
 Копировать файл
